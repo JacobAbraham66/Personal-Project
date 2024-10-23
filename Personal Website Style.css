@@ -1,0 +1,166 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaeaea; /* Light background for contrast */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    display: flex;                     
+    justify-content: space-between;    
+    align-items: center;               
+    background-color: #333;           
+    padding: 20px;                     
+    position: sticky;                   
+    top: 0;                             
+    z-index: 1000; 
+}
+
+.navbar-name {
+    color: white;                       
+    font-size: 1.5em;                 
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+.navbar-links {
+    list-style-type: none;              
+    padding: 0;                         
+    margin: 0;                          
+    display: flex;                      
+    font-family: monospace;
+    font-size:x-large;
+}
+
+.navbar-links li {
+    margin-left: 20px;                  
+}
+
+.navbar-links a {
+    color: white;                      
+    text-decoration: none;              
+    padding: 10px 15px;                
+    transition: background-color 0.3s; 
+}
+
+.navbar-links a:hover {
+    background-color: #575757;          
+}
+
+
+.outer-container {
+    display: flex;                      
+    justify-content: space-between;      /* Space between image and text */
+    padding: 20px;                      /* Padding around the container */
+    border-radius: 10px;                /* Rounded corners */ 
+    width: 80%;                         /* Width of the outer container */
+    margin: 20px auto;                  /* Center the container in the page */
+}
+
+/* Style for the image */
+.profile-pic {
+    width: 400px;                      /* Set the width of the image */
+    height: auto;                      /* Maintain aspect ratio */
+    border-radius: 10px;               /* Rounded corners for the image */
+    object-fit: cover;                 /* Ensure the image covers its box */
+    margin: 10px;
+}
+
+/* Style for the text container */
+.text-box {
+    flex: 1;                           /* Allow the text box to grow and fill available space */
+    padding: 20px;                     /* Padding inside the text box */
+    border-radius: 10px;               /* Rounded corners */
+    background-color: #fff;            /* Background color for the text box */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 40px;
+    font-size: x-large;
+
+}
+
+/* Styling for the heading */
+.text-box h1 {
+    text-align: center;                /* Center the heading text */
+    font-size: xxx-large;              /* Font size for the heading */
+    margin: 20px;                         /* Remove default margin */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 300px;                      /* Width of the sidebar */
+    height: 100vh;                     /* Full height */
+    background-color: #f4f4f4;         /* Background color */
+    border-left: 2px solid #333;       /* Left border */
+    padding: 20px;                     /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Optional shadow effect */
+    overflow-y: auto;                  /* Scroll if content overflows */
+}
+
+/* Ticker container styles */
+.ticker-container {
+    padding: 10px;                     /* Padding inside the ticker box */
+    background-color: white;           /* Background color of the ticker box */
+    border-radius: 5px;                /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow for depth */
+    margin: 10px;
+}
+
+/* Ticker canvas to hold the TradingView widget */
+.ticker-canvas {
+    width: 100%;                       /* Full width of sidebar */
+    margin-bottom: 10px;              /* Space between tickers */
+}
+
+/* Additional content below the ticker */
+.content {
+    margin-top: 20px;                 /* Space above content */
+    text-align: center;                /* Center align text */
+    font-size: 1.2rem;                 /* Font size */
+}
+
+/* Additional heading styles */
+h2 {
+    text-align: center;                /* Center the heading */
+    margin-bottom: 15px;               /* Space below the heading */
+}
+
+.contact-container {
+    display: flex; /* Use flexbox to align boxes horizontally */
+    justify-content: space-between; /* Space between boxes */
+    margin-top: 20px; /* Space above the contact boxes */
+}
+
+.contact-box {
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Add padding inside boxes */
+    margin: 0 10px; /* Add horizontal margin between boxes */
+    text-align: center; /* Center align text */
+    flex: 1; /* Allow boxes to grow and fill the space evenly */
+    min-width: 150px; /* Set a minimum width for boxes */
+}
+
+/* Adjust logo size if necessary */
+.logo {
+    width: 100px; /* Set logo width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
+}
+
+/* Progress Bar Container */
+#progressBarContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    z-index: 200; /* Should be above content but below navbar links */
+}
+
+/* Actual Progress Bar */
+#progressBar {
+    height: 100%;
+    width: 0%;
+    background-color: #4caf50; /* Green progress bar */
+}
